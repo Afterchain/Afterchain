@@ -74,7 +74,7 @@ This repository exists to:
 - Maintain alignment with https://afterchain.io  
 
 For protocol details, see:
-- `PROTOCOL_SUMMARY.md`
+- `whitepaper_summary.md`
 
 For licensing or integration inquiries:
 👉 https://afterchain.io

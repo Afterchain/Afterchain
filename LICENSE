@@ -1,9 +1,27 @@
-Copyright © 2025 KOTIQ OÜ. All rights reserved.
+Copyright © 2026 KOTIQ OÜ. All rights reserved.
 
-This repository is provided for informational and illustrative purposes only. It contains high-level architectural descriptions of the Afterchain protocol, a proprietary and patent-protected system for post-mortem digital asset execution.
+This repository is provided strictly for informational, evaluative, and academic discussion purposes.
 
-No license is granted to reproduce, copy, modify, reverse engineer, distribute, or implement any part of the Afterchain system, including its cryptographic architecture, logic, or processes.
+It contains high-level, non-confidential descriptions of the Afterchain protocol — a proprietary, patent-protected cryptographic system for deterministic post-mortem execution of digital asset transfers.
 
-The Afterchain system is protected under international patent application PCT/IB2025/057151.
+No license, right, or permission is granted under any circumstances to:
+- reproduce or copy,
+- modify or derive from,
+- implement or deploy,
+- reverse engineer or simulate,
+- distribute or sublicense
 
-Use of the information in this repository is permitted solely for evaluation or research discussion. For licensing inquiries or integration access, please contact: https://afterchain.io
+any part of the Afterchain system, including but not limited to its cryptographic architecture, execution logic, oracle design, registry model, or protocol flows.
+
+The Afterchain protocol is protected under international patent application
+**PCT/IB2025/057151**, including its architectural structure, verification mechanisms, and execution model.
+
+Use of the information contained in this repository is permitted solely for:
+- high-level evaluation,
+- non-commercial research discussion,
+- partner due diligence.
+
+Any commercial use, implementation, integration, or reproduction requires an explicit written license from the rights holder.
+
+For licensing, integration, or institutional inquiries, visit:
+https://afterchain.io

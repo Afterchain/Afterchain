@@ -24,13 +24,14 @@ Production code, execution logic, and partner integrations are developed private
 - Designed for exchanges, custodians, and Web3 infrastructure  
 - Zero-custody by design  
 - Deterministic and irreversible  
-- Privacy-preserving through zero-knowledge proofs  
+- Privacy-preserving through zero-knowledge proofs
+- Closed-core protocol with public specifications and non-exclusive licensing
+
 
 ---
 
 ## What Afterchain Is Not
 
-- Not an open-source protocol  
 - Not a consumer wallet or application  
 - Not a legal testament  
 - Not a custodial or trust-based service  

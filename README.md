@@ -1,63 +1,84 @@
-# Afterchain – The Inheritance Layer of Web3
+# Afterchain — The Inheritance Layer of Web3
 
-Afterchain is a cryptographic protocol for verifiable, jurisdiction-agnostic post-mortem transfer of digital assets.
+Afterchain is an active, proprietary cryptographic protocol for deterministic, jurisdiction-agnostic post-mortem execution of digital asset transfers.
 
-Unlike traditional smart contract inheritance models, Afterchain introduces a deterministic execution layer based on certified death events and zero-knowledge privacy — enabling secure, automated transfer without lawyers, custodians, or reliance on inactivity triggers.
+It enables irreversible on-chain inheritance triggered exclusively by certified death events — without custodians, lawyers, inactivity assumptions, or human executors.
 
 ---
 
-## 🔒 Core Principles
+## Project Status
+
+**Status:** Active private development  
+**Distribution model:** Licensing-only (closed-core)  
+**Last protocol update:** January 2026  
+
+This repository represents the **public specification and reference layer** of the Afterchain protocol.
+
+Production code, execution logic, and partner integrations are developed privately and released only under commercial or institutional license.
+
+---
+
+## What Afterchain Is
+
+- A cryptographic execution layer for post-mortem asset transfer  
+- Designed for exchanges, custodians, and Web3 infrastructure  
+- Zero-custody by design  
+- Deterministic and irreversible  
+- Privacy-preserving through zero-knowledge proofs  
+
+---
+
+## What Afterchain Is Not
+
+- Not an open-source protocol  
+- Not a consumer wallet or application  
+- Not a legal testament  
+- Not a custodial or trust-based service  
+
+---
+
+## Core Building Blocks (Conceptual)
 
 - **Death Verification Oracle (DVO)**  
-  Queries institutional endpoints for digitally signed death certificates (PKI).
+  Cryptographically verifies certified death events via institutional PKI sources.
 
-- **zk-SNARK Heir Registry**  
-  Enables privacy-preserving heir verification without disclosing identity.
+- **Transfer Vault (TV)**  
+  Smart-contract container enforcing deterministic execution rules.
 
-- **Smart Contract Execution Engine**  
-  Transfers digital assets automatically once verified death + proof is confirmed.
+- **Zero-Knowledge Beneficiary Registry (BRM)**  
+  Privacy-preserving heir resolution using zk-SNARKs, Merkle trees, and nullifiers.
 
-- **No Custody, No Trust Assumptions**  
-  Afterchain never holds keys. Execution is cryptographically enforced.
-
-- **Patent Protected**  
-  Filed under PCT/IB2025/057151.
+- **Execution Engine**  
+  Coordinates final, irreversible on-chain settlement.
 
 ---
 
-## 📌 Use Case: Exchanges & Custody Platforms
+## Intellectual Property
 
-Afterchain helps platforms unlock new post-mortem monetization layers:
+The Afterchain protocol is protected under international patent application  
+**PCT/IB2025/057151**.
 
-- 2% per-claim execution fee (end user)  
-- 80% retained by the platform  
-- Zero operational effort  
+This repository does **not** grant any license to implement, reproduce, or derive from the protocol.
 
-> Dormant wallets become revenue events — triggered only by certified death.
-
----
-
-## 🧠 Technical Architecture (High-Level)
-
-Afterchain integrates with national e-registries and institutional sources using:
-
-- TLS-authenticated death certificate validation (X.509, OCSP, CRL)  
-- zk-SNARKs (e.g. Groth16) to verify beneficiary eligibility  
-- Merkle trees & nullifiers to avoid double-claims  
-- Deterministic smart contract logic to execute on-chain  
-
-All of this is designed to operate jurisdiction-neutral and privacy-preserving.
+See `LICENSE` for full terms.
 
 ---
 
-## 🚫 Source Code Disclaimer
+## Repository Scope
 
-This repository does **not** contain implementation code.
-Instead, it provides architectural background and licensing context.
+This repository exists to:
 
-For integration inquiries or research access, visit:
+- Provide architectural context  
+- Support partner and institutional due diligence  
+- Enable non-confidential technical discussion  
+- Maintain alignment with https://afterchain.io  
+
+For protocol details, see:
+- `PROTOCOL_SUMMARY.md`
+
+For licensing or integration inquiries:
 👉 https://afterchain.io
 
 ---
 
-© 2025 KOTIQ OÜ – All rights reserved.
+© 2026 KOTIQ OÜ — All rights reserved.

@@ -1,83 +1,77 @@
 # Afterchain — The Inheritance Layer of Web3
 
-Afterchain is an active, proprietary cryptographic protocol for deterministic, jurisdiction-agnostic post-mortem execution of digital asset transfers.
-
-It enables irreversible on-chain inheritance triggered exclusively by certified death events — without custodians, lawyers, inactivity assumptions, or human executors.
+Afterchain is a deterministic, non-custodial, privacy-preserving protocol
+for post-mortem digital asset execution. A `TransferVault` transitions
+through a strict on-chain state machine — `ACTIVE → ATTESTED → CLAIMABLE
+→ EXECUTED` — gated by cryptographic attestations, zero-knowledge proofs,
+and a multi-signature oracle layer. No custodians. No inactivity
+assumptions. No human executors.
 
 ---
 
 ## Project Status
 
-**Status:** Active private development  
-**Distribution model:** Licensing-only (closed-core)  
-**Last protocol update:** January 2026  
+| Field | Value |
+|---|---|
+| Status | Active development |
+| Distribution model | Closed-core, licensing-only |
+| Patent | PCT/IB2025/057151 |
+| Public shell | [afterchain-protocol-public](https://github.com/Afterchain/afterchain-protocol-public) |
 
-This repository represents the **public specification and reference layer** of the Afterchain protocol.
+---
 
-Production code, execution logic, and partner integrations are developed privately and released only under commercial or institutional license.
+## Public Audit Surface
+
+The on-chain execution rail is publicly available for security review:
+
+**[github.com/Afterchain/afterchain-protocol-public](https://github.com/Afterchain/afterchain-protocol-public)**
+
+The public shell contains:
+- 20 Solidity contract source files
+- 174 Foundry regression tests (all passing)
+- Public security model documentation
+- Groth16 ZK verifier artifacts
+- Business Source License 1.1 (Change Date: 2035-01-01)
+
+The off-chain orchestration layer (oracle attestation, evidence package
+assembly, deployment infrastructure) is closed-core and not included.
 
 ---
 
 ## What Afterchain Is
 
-- A cryptographic execution layer for post-mortem asset transfer  
-- Designed for exchanges, custodians, and Web3 infrastructure  
-- Zero-custody by design  
-- Deterministic and irreversible  
-- Privacy-preserving through zero-knowledge proofs
-- Closed-core protocol with public specifications and non-exclusive licensing
-
-
----
+- A cryptographic execution layer for post-mortem digital asset transfer
+- Designed for exchanges, custodians, and Web3 infrastructure
+- Zero-custody by design — no contract ever holds funds as collateral or bond
+- Deterministic and irreversible — mathematical liveness guarantee, not economic
+- Privacy-preserving through Groth16 zero-knowledge proofs
+- Multi-signature oracle layer with 3-of-5 threshold and 24h on-chain timelock
+- Cross-chain replay protected at three independent enforcement layers
 
 ## What Afterchain Is Not
 
-- Not a consumer wallet or application  
-- Not a legal testament  
-- Not a custodial or trust-based service  
-
----
-
-## Core Building Blocks (Conceptual)
-
-- **Death Verification Oracle (DVO)**  
-  Cryptographically verifies certified death events via institutional PKI sources.
-
-- **Transfer Vault (TV)**  
-  Smart-contract container enforcing deterministic execution rules.
-
-- **Zero-Knowledge Beneficiary Registry (BRM)**  
-  Privacy-preserving heir resolution using zk-SNARKs, Merkle trees, and nullifiers.
-
-- **Execution Engine**  
-  Coordinates final, irreversible on-chain settlement.
+- Not a consumer wallet or application
+- Not a legal testament
+- Not a custodial or trust-based service
+- Not dependent on inactivity timers or human judgment
 
 ---
 
 ## Intellectual Property
 
-The Afterchain protocol is protected under international patent application  
+The Afterchain protocol is protected under international patent application
 **PCT/IB2025/057151**.
 
-This repository does **not** grant any license to implement, reproduce, or derive from the protocol.
-
-See `LICENSE` for full terms.
+The public shell is distributed under the Business Source License 1.1.
+Non-commercial review, academic research, and security audits are permitted
+without a separate agreement. Production use requires a commercial license.
 
 ---
 
-## Repository Scope
+## Contact
 
-This repository exists to:
+For licensing, integration, or institutional due diligence inquiries:
 
-- Provide architectural context  
-- Support partner and institutional due diligence  
-- Enable non-confidential technical discussion  
-- Maintain alignment with https://afterchain.io  
-
-For protocol details, see:
-- `whitepaper_summary.md`
-
-For licensing or integration inquiries:
 👉 https://afterchain.io
 
 ---
